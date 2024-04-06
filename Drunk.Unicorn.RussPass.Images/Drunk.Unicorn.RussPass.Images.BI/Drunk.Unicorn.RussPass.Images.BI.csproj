@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Collection.EntityFrameworkCore" Version="7.0.1" />
+    <PackageReference Include="DelegateDecompiler.EntityFrameworkCore5" Version="0.29.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Drunk.Unicorn.RussPass.Data\Drunk.Unicorn.RussPass.Data.csproj" />
+    <ProjectReference Include="..\Drunk.Unicorn.RussPass.Images.Data\Drunk.Unicorn.RussPass.Images.Data.csproj" ReplaceParameters="true" />
+    <ProjectReference Include="..\Drunk.Unicorn.RussPass.Images.General\Drunk.Unicorn.RussPass.Images.General.csproj" ReplaceParameters="true" />
+  </ItemGroup>
+
+</Project>
