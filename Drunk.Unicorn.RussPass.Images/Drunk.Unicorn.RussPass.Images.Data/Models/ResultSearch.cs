@@ -11,7 +11,7 @@ namespace Drunk.Unicorn.RussPass.Images.Data.Models
     public class ResultSearch
     {
         [JsonProperty("image_tags")]
-        public Tag[] ImageTags { get; set; }
+        public Tag[] image_tags { get; set; }
 
         /// <summary>
         /// Проверка, существует ли хотя бы один искомый тег содержащий название локации.
@@ -20,9 +20,9 @@ namespace Drunk.Unicorn.RussPass.Images.Data.Models
         /// <returns></returns>
         public bool IsExistLocationName(string locationName)
         {
-            var words = locationName.Split(' ');
+            var words = locationName.ToLower().Split(' ');
 
-            return ImageTags.Select(x => x.Text.Split(' ')).Any(tag => !words.Except(tag).Any());
+            return image_tags.Select(x => x.text.ToLower().Split(' ')).Any(tag => !words.Except(tag).Any());
         }
     }
 }

@@ -15,6 +15,6 @@ namespace Drunk.Unicorn.RussPass.Users.BI.Interfaces
         /// <param name="file"></param>
         /// <param name="fileName"></param>
         /// <returns>Вернёт url файла</returns>
-        Task<string> SendFile(Stream file, string fileName);
+        Task<string> SendFile(MemoryStream file, string fileName);
     }
 }

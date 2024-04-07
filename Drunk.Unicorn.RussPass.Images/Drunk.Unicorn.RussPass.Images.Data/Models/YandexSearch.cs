@@ -38,7 +38,7 @@ namespace Drunk.Unicorn.RussPass.Images.Data.Models
         /// Тип движка поиска
         /// </summary>
         [DisplayName("engine")]
-        private string TypeSearch => typeSearch;
+        public string TypeSearch => typeSearch;
 
         public SearchBase()
         {

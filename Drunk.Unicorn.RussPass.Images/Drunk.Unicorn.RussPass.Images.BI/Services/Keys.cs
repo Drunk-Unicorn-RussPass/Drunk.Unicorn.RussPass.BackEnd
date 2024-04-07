@@ -20,7 +20,7 @@ namespace Drunk.Unicorn.RussPass.Images.BI.Services
         {
             var config = configuration.GetSection("Search").Get<Config>();
 
-            _keys = config.Keys;
+            _keys = new KeysEnumerator(config.Keys);
 
             if (_keys.MoveNext())
                 _key = _keys.Current;

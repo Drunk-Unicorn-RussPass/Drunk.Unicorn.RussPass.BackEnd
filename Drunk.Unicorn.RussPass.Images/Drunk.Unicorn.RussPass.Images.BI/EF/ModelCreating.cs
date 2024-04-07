@@ -1,6 +1,4 @@
-﻿using Drunk.Unicorn.RussPass.Points.Data.Attributes;
-using Drunk.Unicorn.RussPass.Points.Data.Entity;
-using Drunk.Unicorn.RussPass.Points.General.Expansions;
+﻿
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

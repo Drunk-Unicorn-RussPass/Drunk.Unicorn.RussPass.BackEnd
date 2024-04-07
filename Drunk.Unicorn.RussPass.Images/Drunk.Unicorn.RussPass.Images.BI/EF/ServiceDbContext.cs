@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Drunk.Unicorn.RussPass.Points.EF
+namespace Drunk.Unicorn.RussPass.Images.EF
 {
     public partial class ServiceDbContext : DbContext
     {
+        public DbSet<LocationToTrack> LocationsProcess { get; set; }
 
         public ServiceDbContext(DbContextOptions<ServiceDbContext> option) : base(option)
         {

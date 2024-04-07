@@ -36,7 +36,7 @@ builder.Services.AddHttpClient<ISearchClient, SerpClient>()
 //   .AddTransientHttpErrorPolicy(policyBuilder => policyBuilder
 //       .WaitAndRetryAsync(3, retryNumber => TimeSpan.FromMilliseconds(600)));
 
-
+builder.Services.AddScoped<ILocations, LocationsService>();
 builder.Services.AddScoped<ISearch, Search>();
 builder.Services.AddSingleton<Keys>();
 

@@ -27,6 +27,8 @@ namespace Drunk.Unicorn.RussPass.Kafka
         {
             _logger = logger;
             _config = configuration.GetSection("Endpoints").Get<KafkaConfig>();
+            if (_config is null)
+                return;
 
             var config = new ProducerConfig
             {

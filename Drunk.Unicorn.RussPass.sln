@@ -11,47 +11,49 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Points", "Points", "{EDC05F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{C1146FDF-7457-43E4-B2E4-15CE404B767F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Images.API", "Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.API\Drunk.Unicorn.RussPass.Images.API.csproj", "{05756A42-72A1-4EE9-B835-AE9566E3B91B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Images.API", "Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.API\Drunk.Unicorn.RussPass.Images.API.csproj", "{05756A42-72A1-4EE9-B835-AE9566E3B91B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Images.Data", "Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.Data\Drunk.Unicorn.RussPass.Images.Data.csproj", "{365251E4-1FD4-4BA0-9BCE-624E3CE92169}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Images.Data", "Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.Data\Drunk.Unicorn.RussPass.Images.Data.csproj", "{365251E4-1FD4-4BA0-9BCE-624E3CE92169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Images.BI", "Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.BI\Drunk.Unicorn.RussPass.Images.BI.csproj", "{E4B4A1F7-DEFD-4337-978A-E68D646CC75A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Images.BI", "Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.BI\Drunk.Unicorn.RussPass.Images.BI.csproj", "{E4B4A1F7-DEFD-4337-978A-E68D646CC75A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Images.General", "Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.General\Drunk.Unicorn.RussPass.Images.General.csproj", "{662CB881-6691-487F-8A6E-BC7F1C1B4AAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Images.General", "Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.General\Drunk.Unicorn.RussPass.Images.General.csproj", "{662CB881-6691-487F-8A6E-BC7F1C1B4AAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Points.API", "Drunk.Unicorn.RussPass.Points\Drunk.Unicorn.RussPass.Points.API\Drunk.Unicorn.RussPass.Points.API.csproj", "{BEB9CCC6-4A51-4653-9282-F5DB7A18E9EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Points.API", "Drunk.Unicorn.RussPass.Points\Drunk.Unicorn.RussPass.Points.API\Drunk.Unicorn.RussPass.Points.API.csproj", "{BEB9CCC6-4A51-4653-9282-F5DB7A18E9EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Points.Data", "Drunk.Unicorn.RussPass.Points\Drunk.Unicorn.RussPass.Points.Data\Drunk.Unicorn.RussPass.Points.Data.csproj", "{6E51D9F3-5C9D-4C02-B9DD-8DDEA290193F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Points.Data", "Drunk.Unicorn.RussPass.Points\Drunk.Unicorn.RussPass.Points.Data\Drunk.Unicorn.RussPass.Points.Data.csproj", "{6E51D9F3-5C9D-4C02-B9DD-8DDEA290193F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Points.BI", "Drunk.Unicorn.RussPass.Points\Drunk.Unicorn.RussPass.Points.BI\Drunk.Unicorn.RussPass.Points.BI.csproj", "{48F4034C-9B6F-45FD-BB11-58704BF0B4B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Points.BI", "Drunk.Unicorn.RussPass.Points\Drunk.Unicorn.RussPass.Points.BI\Drunk.Unicorn.RussPass.Points.BI.csproj", "{48F4034C-9B6F-45FD-BB11-58704BF0B4B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Points.General", "Drunk.Unicorn.RussPass.Points\Drunk.Unicorn.RussPass.Points.General\Drunk.Unicorn.RussPass.Points.General.csproj", "{4B752CCB-C4CE-4846-865A-E8C226E5C1AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Points.General", "Drunk.Unicorn.RussPass.Points\Drunk.Unicorn.RussPass.Points.General\Drunk.Unicorn.RussPass.Points.General.csproj", "{4B752CCB-C4CE-4846-865A-E8C226E5C1AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Tracks.API", "Drunk.Unicorn.RussPass.Tracks\Drunk.Unicorn.RussPass.Tracks.API\Drunk.Unicorn.RussPass.Tracks.API.csproj", "{3C67542B-F273-45BD-99F3-2BFB83D895F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Tracks.API", "Drunk.Unicorn.RussPass.Tracks\Drunk.Unicorn.RussPass.Tracks.API\Drunk.Unicorn.RussPass.Tracks.API.csproj", "{3C67542B-F273-45BD-99F3-2BFB83D895F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Tracks.Data", "Drunk.Unicorn.RussPass.Tracks\Drunk.Unicorn.RussPass.Tracks.Data\Drunk.Unicorn.RussPass.Tracks.Data.csproj", "{70C65E66-4B1B-41C0-AFEF-9B0D3BF441E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Tracks.Data", "Drunk.Unicorn.RussPass.Tracks\Drunk.Unicorn.RussPass.Tracks.Data\Drunk.Unicorn.RussPass.Tracks.Data.csproj", "{70C65E66-4B1B-41C0-AFEF-9B0D3BF441E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Tracks.BI", "Drunk.Unicorn.RussPass.Tracks\Drunk.Unicorn.RussPass.Tracks.BI\Drunk.Unicorn.RussPass.Tracks.BI.csproj", "{90A9FFC8-24C8-4E01-89BF-D71F886907DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Tracks.BI", "Drunk.Unicorn.RussPass.Tracks\Drunk.Unicorn.RussPass.Tracks.BI\Drunk.Unicorn.RussPass.Tracks.BI.csproj", "{90A9FFC8-24C8-4E01-89BF-D71F886907DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Tracks.General", "Drunk.Unicorn.RussPass.Tracks\Drunk.Unicorn.RussPass.Tracks.General\Drunk.Unicorn.RussPass.Tracks.General.csproj", "{1EC7C69A-AC0F-4AE7-AA42-5F6408E9734A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Tracks.General", "Drunk.Unicorn.RussPass.Tracks\Drunk.Unicorn.RussPass.Tracks.General\Drunk.Unicorn.RussPass.Tracks.General.csproj", "{1EC7C69A-AC0F-4AE7-AA42-5F6408E9734A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Users.API", "Drunk.Unicorn.RussPass.Users\Drunk.Unicorn.RussPass.Users.API\Drunk.Unicorn.RussPass.Users.API.csproj", "{CBE32D96-1004-48A4-9EB6-9CFD307E837F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Users.API", "Drunk.Unicorn.RussPass.Users\Drunk.Unicorn.RussPass.Users.API\Drunk.Unicorn.RussPass.Users.API.csproj", "{CBE32D96-1004-48A4-9EB6-9CFD307E837F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Users.Data", "Drunk.Unicorn.RussPass.Users\Drunk.Unicorn.RussPass.Users.Data\Drunk.Unicorn.RussPass.Users.Data.csproj", "{FFE3AE37-8DEA-4FE8-A955-555EAFBA2DB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Users.Data", "Drunk.Unicorn.RussPass.Users\Drunk.Unicorn.RussPass.Users.Data\Drunk.Unicorn.RussPass.Users.Data.csproj", "{FFE3AE37-8DEA-4FE8-A955-555EAFBA2DB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Users.BI", "Drunk.Unicorn.RussPass.Users\Drunk.Unicorn.RussPass.Users.BI\Drunk.Unicorn.RussPass.Users.BI.csproj", "{4964EFBF-D79C-4FF6-9A64-9A01D7F35B3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Users.BI", "Drunk.Unicorn.RussPass.Users\Drunk.Unicorn.RussPass.Users.BI\Drunk.Unicorn.RussPass.Users.BI.csproj", "{4964EFBF-D79C-4FF6-9A64-9A01D7F35B3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Users.General", "Drunk.Unicorn.RussPass.Users\Drunk.Unicorn.RussPass.Users.General\Drunk.Unicorn.RussPass.Users.General.csproj", "{AA2A4B72-5F85-48B6-915A-5370C8B47CFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Users.General", "Drunk.Unicorn.RussPass.Users\Drunk.Unicorn.RussPass.Users.General\Drunk.Unicorn.RussPass.Users.General.csproj", "{AA2A4B72-5F85-48B6-915A-5370C8B47CFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Images.Kafka", "Drunk.Unicorn.RussPass.Images.Kafka\Drunk.Unicorn.RussPass.Images.Kafka.csproj", "{97EA4BA9-8731-4C21-BB8F-35119E7F7676}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Images.Kafka", "Drunk.Unicorn.RussPass.Images.Kafka\Drunk.Unicorn.RussPass.Images.Kafka.csproj", "{97EA4BA9-8731-4C21-BB8F-35119E7F7676}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{58B02B89-E7CD-4AC6-A2CE-813357C6C489}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Data", "Drunk.Unicorn.RussPass.Data\Drunk.Unicorn.RussPass.Data.csproj", "{379C49BE-49E5-4E78-81E5-CD97E14386AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Data", "Drunk.Unicorn.RussPass.Data\Drunk.Unicorn.RussPass.Data.csproj", "{379C49BE-49E5-4E78-81E5-CD97E14386AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.General", "Drunk.Unicorn.RussPass.General\Drunk.Unicorn.RussPass.General.csproj", "{67B20355-E65C-4115-8E44-F6A3C1D2ADA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.General", "Drunk.Unicorn.RussPass.General\Drunk.Unicorn.RussPass.General.csproj", "{67B20355-E65C-4115-8E44-F6A3C1D2ADA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Kafka", "Drunk.Unicorn.RussPass.Kafka\Drunk.Unicorn.RussPass.Kafka.csproj", "{343377B5-CBF2-4F1B-8B47-3F582916F390}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drunk.Unicorn.RussPass.Kafka", "Drunk.Unicorn.RussPass.Kafka\Drunk.Unicorn.RussPass.Kafka.csproj", "{343377B5-CBF2-4F1B-8B47-3F582916F390}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Neironki", "Neironka\Test.Neironki.csproj", "{54C6945F-862C-4C3E-B416-24D7A68D45C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -139,6 +141,10 @@ Global
 		{343377B5-CBF2-4F1B-8B47-3F582916F390}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{343377B5-CBF2-4F1B-8B47-3F582916F390}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{343377B5-CBF2-4F1B-8B47-3F582916F390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C6945F-862C-4C3E-B416-24D7A68D45C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C6945F-862C-4C3E-B416-24D7A68D45C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C6945F-862C-4C3E-B416-24D7A68D45C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C6945F-862C-4C3E-B416-24D7A68D45C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

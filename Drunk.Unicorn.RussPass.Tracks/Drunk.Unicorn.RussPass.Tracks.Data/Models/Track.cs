@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Drunk.Unicorn.RussPass.Tracks.Data.Models
 {
-
     public enum TrackStatus
     {
         Processing,

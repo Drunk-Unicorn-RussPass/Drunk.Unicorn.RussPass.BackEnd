@@ -11,6 +11,6 @@ namespace Drunk.Unicorn.RussPass.Images.BI.Options
     {
         public string Url { get; set; }
 
-        public KeysEnumerator Keys { get; set; }
+        public string[] Keys { get; set; }
     }
 }

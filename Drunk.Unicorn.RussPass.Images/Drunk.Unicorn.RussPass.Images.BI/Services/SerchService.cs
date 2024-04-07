@@ -25,7 +25,11 @@ public class SerpClient : ISearchClient
 
         if (response.StatusCode == System.Net.HttpStatusCode.OK)
         {
-            return JsonSerializer.Deserialize<TResult>(json);
+            return JsonSerializer.Deserialize<TResult>(json, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                WriteIndented = true
+            });
         }
 
         throw new SearchException(json, response.StatusCode);

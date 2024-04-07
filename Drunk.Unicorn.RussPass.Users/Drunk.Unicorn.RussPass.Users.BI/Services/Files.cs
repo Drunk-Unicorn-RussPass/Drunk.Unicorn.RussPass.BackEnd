@@ -24,16 +24,16 @@ namespace Drunk.Unicorn.RussPass.Users.BI.Services
         private readonly IMinioClient _minioClient;
         private readonly FileConfig _config;
 
-        public FilesProvider(IOptions<FileConfig> config)
+        public FilesProvider(/*IOptions<FileConfig> config*/)
         {
-            _config = config.Value;
+            _config = new FileConfig();
             _minioClient = new MinioClient()
                               .WithEndpoint(_config.Url)
                               .WithCredentials(_config.AcceptKey, _config.SecretKey)
                               .Build();
         }
 
-        public async Task<string> SendFile(Stream file, string fileName)
+        public async Task<string> SendFile(MemoryStream file, string fileName)
         {
             var f = new PutObjectArgs()
                 .WithBucket(_config.MainBucket)
@@ -54,24 +54,32 @@ namespace Drunk.Unicorn.RussPass.Users.BI.Services
         private readonly HttpClient _httpClient;
         private readonly Fileobmen _config;
 
-        public FilesObmennikProvider(HttpClient client, IOptions<Fileobmen> config)
+        public FilesObmennikProvider(HttpClient client/*IOptions<Fileobmen> config*/)
         {
-            _config = config.Value;
+            _config = new Fileobmen()
+            {
+                Key = "A0wPKsn96TxpCzyfEneAKYY2mBD07o7gOdg",
+                Url = "https://api.imageban.ru/v1"
+            };// config.Value;
 
             _httpClient = client;
             _httpClient.DefaultRequestHeaders.Authorization
                          = new AuthenticationHeaderValue("Bearer", _config.Key);
         }
 
-        public async Task<string> SendFile(Stream file, string fileName)
+        public async Task<string> SendFile(MemoryStream file, string fileName)
         {
             using MultipartFormDataContent multipartContent = new();
-            var imageContent = new StreamContent(File.OpenRead($".{Path.DirectorySeparatorChar}john_doe.jpg"));
+            var imageContent = new StreamContent(file);
             imageContent.Headers.ContentType = MediaTypeHeaderValue.Parse(MediaTypeNames.Image.Jpeg);
             multipartContent.Add(imageContent, "image", fileName);
             using var response = await _httpClient.PostAsync(_config.Url, multipartContent);
-
-            var result = JsonSerializer.Deserialize<ImageObmennik>(await response.Content.ReadAsStringAsync());
+            var json = await response.Content.ReadAsStringAsync();
+            var result = JsonSerializer.Deserialize<ImageObmennik>(json, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                WriteIndented = true
+            });
 
             return result.Data.Link;
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Drunk.Unicorn.RussPass.Points.Data.Entity
+namespace Drunk.Unicorn.RussPass.Images.Data.Entity
 {
     public class Base2 : Base
     {

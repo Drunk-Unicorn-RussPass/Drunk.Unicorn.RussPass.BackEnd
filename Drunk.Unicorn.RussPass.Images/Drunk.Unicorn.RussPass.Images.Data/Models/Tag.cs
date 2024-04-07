@@ -10,6 +10,6 @@ namespace Drunk.Unicorn.RussPass.Images.Data.Models
     public class Tag
     {
         [JsonProperty("text")]
-        public string Text { get; set; }
+        public string text { get; set; }
     }
 }

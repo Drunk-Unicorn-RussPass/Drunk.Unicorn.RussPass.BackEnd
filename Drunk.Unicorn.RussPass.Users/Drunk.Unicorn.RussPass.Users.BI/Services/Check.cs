@@ -18,14 +18,14 @@ namespace Drunk.Unicorn.RussPass.Users.BI.Services
         private readonly IFilesProvider _files;
         private readonly KafkaConfig _config;
 
-        public Check(IKafkaProvider kafka, IFilesProvider files, IOptions<KafkaConfig> config)
+        public Check(IKafkaProvider kafka, IFilesProvider files/*IOptions<KafkaConfig> config*/)
         {
             _files = files;
             _kafka = kafka;
-            _config = config.Value;
+            _config = new KafkaConfig();
         }
 
-        public async Task SendImage(Stream image, string fileName, int locationId, int trackId)
+        public async Task SendImage(MemoryStream image, string fileName, int locationId, int trackId)
         {
             var url = await _files.SendFile(image, fileName);
 
@@ -35,6 +35,11 @@ namespace Drunk.Unicorn.RussPass.Users.BI.Services
                 LocationId = locationId,
                 TrackId = trackId,
             }));
+        }
+
+        public async Task<string> SendImageReturnUrl(MemoryStream image, string fileName)
+        {
+            return await _files.SendFile(image, fileName);
         }
     }
 }

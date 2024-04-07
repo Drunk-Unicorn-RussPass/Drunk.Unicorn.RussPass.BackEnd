@@ -31,7 +31,7 @@ namespace Drunk.Unicorn.RussPass.Images.BI.Services
             try
             {
                 var result = await _httpClient.Search<ResultSearch, YandexSearch>(request);
-                if (result?.ImageTags?.Any() != true)
+                if (result?.image_tags?.Any() != true)
                     throw new SearchException("Не удалось распознать изображение!", System.Net.HttpStatusCode.OK);
 
                 return result.IsExistLocationName(request.LocationName);
@@ -41,6 +41,11 @@ namespace Drunk.Unicorn.RussPass.Images.BI.Services
                 request.Key = _keys.GetNextKey();
 
                 return await FindImageAsync(request);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine();
+                throw;
             }
         }
     }
