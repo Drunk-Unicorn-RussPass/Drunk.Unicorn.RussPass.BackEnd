@@ -17,4 +17,8 @@
     <Folder Include="Enums\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Drunk.Unicorn.RussPass.Data\Drunk.Unicorn.RussPass.Data.csproj" />
+  </ItemGroup>
+
 </Project>

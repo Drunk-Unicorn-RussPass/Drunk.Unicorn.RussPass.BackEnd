@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Drunk.Unicorn.RussPass.Images.Data.Attributes;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,10 +24,14 @@ namespace Drunk.Unicorn.RussPass.Images.Data.Models
         /// </summary>
         [DisplayName("api_key")]
         public string Key { get; set; }
+
+        [NoCheck]
+        public string LocationName { get; set; }
     }
 
     public class SearchBase
     {
+        [NoCheck]
         private readonly string typeSearch;
 
         /// <summary>
@@ -42,7 +47,7 @@ namespace Drunk.Unicorn.RussPass.Images.Data.Models
 
         public SearchBase(string type)
         {
-            TypeSearch = type;
+            typeSearch = type;
         }
     }
 }

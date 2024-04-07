@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Drunk.Unicorn.RussPass.Images.Data.Attributes
 {
-    [AttributeUsage(AttributeTargets.Field)]
-    public class PrimaryTypeAttribute : Attribute
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    public class NoCheckAttribute : Attribute
     {
 
-        public PrimaryTypeAttribute()
+        public NoCheckAttribute()
         {
 
         }

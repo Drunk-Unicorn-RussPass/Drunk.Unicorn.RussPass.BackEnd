@@ -13,11 +13,16 @@ namespace Drunk.Unicorn.RussPass.Images.Data.Models
         [JsonProperty("image_tags")]
         public Tag[] ImageTags { get; set; }
 
+        /// <summary>
+        /// Проверка, существует ли хотя бы один искомый тег содержащий название локации.
+        /// </summary>
+        /// <param name="locationName">Имя локации</param>
+        /// <returns></returns>
         public bool IsExistLocationName(string locationName)
         {
-            var words = locationName..Split(' ');
+            var words = locationName.Split(' ');
 
-            return words.All()
+            return ImageTags.Select(x => x.Text.Split(' ')).Any(tag => !words.Except(tag).Any());
         }
     }
 }

@@ -8,6 +8,6 @@ namespace Drunk.Unicorn.RussPass.Users.BI.Options
 {
     public class Config
     {
-
+        private FileConfig Files { get; set; }
     }
 }

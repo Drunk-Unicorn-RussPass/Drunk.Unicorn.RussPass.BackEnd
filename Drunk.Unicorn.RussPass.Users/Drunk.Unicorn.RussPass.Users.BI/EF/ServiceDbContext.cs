@@ -1,4 +1,5 @@
 ﻿using Drunk.Unicorn.RussPass.Users.Data.Entity;
+using Drunk.Unicorn.RussPass.Users.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,11 @@ namespace Drunk.Unicorn.RussPass.Users.EF
 {
     public partial class ServiceDbContext : DbContext
     {
+        public DbSet<Location> Locations { get; set; }
+
+        public DbSet<ProcessLocation> ProcessLocations { get; set; }
+
+        public DbSet<ProcessTrack> ProcessTracks { get; set; }
 
         public ServiceDbContext(DbContextOptions<ServiceDbContext> option) : base(option)
         {

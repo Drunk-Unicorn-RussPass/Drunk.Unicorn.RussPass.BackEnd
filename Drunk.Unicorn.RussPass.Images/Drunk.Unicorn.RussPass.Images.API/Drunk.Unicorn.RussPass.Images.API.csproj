@@ -5,12 +5,10 @@
     <UserSecretsId>37d965f0-7b76-4afc-9d5b-318587918f61</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="6.1.0" />
-    <PackageReference Include="Autofac.Configuration" Version="6.0.0" />
-    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Collection.EntityFrameworkCore" Version="7.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
@@ -23,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Drunk.Unicorn.RussPass.Images.Kafka\Drunk.Unicorn.RussPass.Images.Kafka.csproj" />
+    <ProjectReference Include="..\..\Drunk.Unicorn.RussPass.Kafka\Drunk.Unicorn.RussPass.Kafka.csproj" />
     <ProjectReference Include="..\Drunk.Unicorn.RussPass.Images.BI\Drunk.Unicorn.RussPass.Images.BI.csproj" ReplaceParameters="true" />
   </ItemGroup>
 

@@ -11,36 +11,36 @@ using Drunk.Unicorn.RussPass.Images.General.Expansions;
 using Drunk.Unicorn.RussPass.Images.Data.Models;
 using System.Text.Json;
 using System.Security.Cryptography;
+using Drunk.Unicorn.RussPass.Images.General.Exceptions;
 
 namespace Drunk.Unicorn.RussPass.Images.BI.Services
 {
     public class Search : ISearch
     {
-        private readonly HttpClient _httpClient;
+        private readonly ISearchClient _httpClient;
+        private readonly Keys _keys;
 
-        public Search(HttpClient client, Config config)
+        public Search(ISearchClient httClient, Keys keys)
         {
-            _httpClient = client;
-
-            _httpClient.BaseAddress = new Uri(config.SerpUrl);
+            _httpClient = httClient;
+            _keys = keys;
         }
 
-        public async Task<bool> FindImageAsync(YandexSearch search)
+        public async Task<bool> FindImageAsync(YandexSearch request)
         {
-            var response = await _httpClient.GetAsync(_httpClient.BaseAddress.BuildUrlWithQueryStringUsingStringConcat(search.ToDictionary()));
-        
-            if(response.StatusCode == System.Net.HttpStatusCode.OK)
+            try
             {
-                var json = await response.Content.ReadAsStringAsync();
+                var result = await _httpClient.Search<ResultSearch, YandexSearch>(request);
+                if (result?.ImageTags?.Any() != true)
+                    throw new SearchException("Не удалось распознать изображение!", System.Net.HttpStatusCode.OK);
 
-                var result = JsonSerializer.Deserialize<ResultSearch>(json);
+                return result.IsExistLocationName(request.LocationName);
+            }
+            catch (SearchKeyNotValidException)
+            {
+                request.Key = _keys.GetNextKey();
 
-                if(result?.ImageTags is null)
-                {
-                    search.Key = Keys.Next();
-
-                    return await FindImageAsync(search);
-                }
+                return await FindImageAsync(request);
             }
         }
     }

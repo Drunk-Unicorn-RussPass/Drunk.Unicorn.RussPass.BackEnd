@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Drunk.Unicorn.RussPass.Images.General.Exceptions
 {
-    public class CustomException : Exception
+    public class KeysException : Exception
     {
+        public KeysException(string errorMessage) : base(errorMessage) { }
+
     }
 }

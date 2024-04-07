@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.BI\Drunk.Unicorn.RussPass.Images.BI.csproj" />
     <ProjectReference Include="..\Drunk.Unicorn.RussPass.Images\Drunk.Unicorn.RussPass.Images.Data\Drunk.Unicorn.RussPass.Images.Data.csproj" />
   </ItemGroup>
 

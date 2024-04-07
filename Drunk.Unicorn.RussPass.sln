@@ -49,6 +49,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{58B0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Data", "Drunk.Unicorn.RussPass.Data\Drunk.Unicorn.RussPass.Data.csproj", "{379C49BE-49E5-4E78-81E5-CD97E14386AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.General", "Drunk.Unicorn.RussPass.General\Drunk.Unicorn.RussPass.General.csproj", "{67B20355-E65C-4115-8E44-F6A3C1D2ADA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drunk.Unicorn.RussPass.Kafka", "Drunk.Unicorn.RussPass.Kafka\Drunk.Unicorn.RussPass.Kafka.csproj", "{343377B5-CBF2-4F1B-8B47-3F582916F390}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +131,14 @@ Global
 		{379C49BE-49E5-4E78-81E5-CD97E14386AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{379C49BE-49E5-4E78-81E5-CD97E14386AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{379C49BE-49E5-4E78-81E5-CD97E14386AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B20355-E65C-4115-8E44-F6A3C1D2ADA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B20355-E65C-4115-8E44-F6A3C1D2ADA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B20355-E65C-4115-8E44-F6A3C1D2ADA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B20355-E65C-4115-8E44-F6A3C1D2ADA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343377B5-CBF2-4F1B-8B47-3F582916F390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343377B5-CBF2-4F1B-8B47-3F582916F390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343377B5-CBF2-4F1B-8B47-3F582916F390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343377B5-CBF2-4F1B-8B47-3F582916F390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -150,6 +162,8 @@ Global
 		{AA2A4B72-5F85-48B6-915A-5370C8B47CFB} = {4BA83201-C834-4B31-93A1-CCE9BE8C3A22}
 		{97EA4BA9-8731-4C21-BB8F-35119E7F7676} = {C1146FDF-7457-43E4-B2E4-15CE404B767F}
 		{379C49BE-49E5-4E78-81E5-CD97E14386AC} = {58B02B89-E7CD-4AC6-A2CE-813357C6C489}
+		{67B20355-E65C-4115-8E44-F6A3C1D2ADA5} = {58B02B89-E7CD-4AC6-A2CE-813357C6C489}
+		{343377B5-CBF2-4F1B-8B47-3F582916F390} = {58B02B89-E7CD-4AC6-A2CE-813357C6C489}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8A6CD01-7D1B-4CDE-BC67-3FE745943E20}

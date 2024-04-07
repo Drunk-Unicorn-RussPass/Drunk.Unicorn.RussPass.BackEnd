@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Drunk.Unicorn.RussPass.Images.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,8 @@ namespace Drunk.Unicorn.RussPass.Images.BI.Options
 {
     public class Config
     {
-        public string SerpUrl { get; set; }
+        public string Url { get; set; }
 
-        public string[] SerpKeys { get; set; }
+        public KeysEnumerator Keys { get; set; }
     }
 }

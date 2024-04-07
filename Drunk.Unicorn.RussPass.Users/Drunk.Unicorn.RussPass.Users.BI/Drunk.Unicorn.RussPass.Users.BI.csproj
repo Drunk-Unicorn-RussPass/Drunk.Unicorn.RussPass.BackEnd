@@ -1,23 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Collection.EntityFrameworkCore" Version="7.0.1" />
     <PackageReference Include="DelegateDecompiler.EntityFrameworkCore5" Version="0.29.1" />
+    <PackageReference Include="Minio" Version="6.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Drunk.Unicorn.RussPass.Users.Data\Drunk.Unicorn.RussPass.Users.Data.csproj" ReplaceParameters="true"/>
-    <ProjectReference Include="..\Drunk.Unicorn.RussPass.Users.General\Drunk.Unicorn.RussPass.Users.General.csproj" ReplaceParameters="true"/>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\..\Drunk.Unicorn.RussPass.Kafka\Drunk.Unicorn.RussPass.Kafka.csproj" />
+    <ProjectReference Include="..\Drunk.Unicorn.RussPass.Users.Data\Drunk.Unicorn.RussPass.Users.Data.csproj" ReplaceParameters="true" />
+    <ProjectReference Include="..\Drunk.Unicorn.RussPass.Users.General\Drunk.Unicorn.RussPass.Users.General.csproj" ReplaceParameters="true" />
   </ItemGroup>
 
 </Project>

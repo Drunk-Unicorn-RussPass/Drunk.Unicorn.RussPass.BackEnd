@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Serialization;
 using System.ComponentModel;
+using Drunk.Unicorn.RussPass.Images.Data.Attributes;
 
 namespace Drunk.Unicorn.RussPass.Images.General.Expansions
 {
@@ -20,12 +21,20 @@ namespace Drunk.Unicorn.RussPass.Images.General.Expansions
 
             foreach ( var property in properties)
             {
-                result.Add(property.GetName(), property.GetValue(model).ToString());
+                var name = property.GetName();
+
+                if(name is not null)
+                    result.Add(name, property.GetValue(model).ToString());
             }
 
             return result;
         }
 
-        public static string GetName(this PropertyInfo property) => property.GetCustomAttribute<DisplayNameAttribute>()?.DisplayName ?? property.Name;
+        public static string GetName(this PropertyInfo property) {
+            if (property.GetCustomAttribute<NoCheckAttribute>() is not null)
+                return null;
+
+            return property.GetCustomAttribute<DisplayNameAttribute>()?.DisplayName ?? property.Name;
+        }
     }
 }

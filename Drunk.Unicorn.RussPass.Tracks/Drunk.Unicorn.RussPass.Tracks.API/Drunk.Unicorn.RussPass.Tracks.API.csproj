@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -15,6 +15,7 @@
     <PackageReference Include="AutoMapper.Collection.EntityFrameworkCore" Version="7.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="Divergic.Configuration.Autofac" Version="1.3.0" />
+    <PackageReference Include="HotChocolate" Version="13.9.0" />
     <PackageReference Include="JsonModelBinder" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
@@ -22,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Drunk.Unicorn.RussPass.Tracks.BI\Drunk.Unicorn.RussPass.Tracks.BI.csproj" ReplaceParameters="true"/>
+    <ProjectReference Include="..\Drunk.Unicorn.RussPass.Tracks.BI\Drunk.Unicorn.RussPass.Tracks.BI.csproj" ReplaceParameters="true" />
   </ItemGroup>
 
 
